@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import ProjectDetails from './components/ProjectDetails';
 
+
 const App = () => {
     return (
         <Router>
@@ -17,7 +18,7 @@ const App = () => {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/projects/:id" element={<ProjectDetails />} /> {/* Define route for ProjectDetails */}
-                
+               
             </Routes>
         </Router>
     );
